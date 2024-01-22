@@ -4,8 +4,196 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Assignment 3 Hockey's</title>
+    <!-- tailwind + daisy UI -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- style -->
+    <style>
+      .font-manrope {
+        font-family: "Manrope", sans-serif;
+      }
+
+      hr {
+        border: none;
+        border-top: 1px dotted rgb(160, 160, 160);
+      }
+    </style>
+    <!-- tailwind custom -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+            },
+          },
+        },
+      };
+    </script>
   </head>
-  <body>
-    <h1>Yahya</h1>
+  <body class="font-manrope">
+    <header>
+      <!-- slider section -->
+      <div class="container mx-auto border border-black px-8 lg:px-24">
+        <div class="carousel w-full">
+          <!-- slide 1 -->
+          <div id="slide1" class="carousel-item relative w-full lg:h-[60vh]">
+            <img src="Images/slider-1.png" class="w-full" />
+            <div
+              class="absolute bottom-0 left-10 space-x-4 transform -translate-y-1/2"
+            >
+              <a href="#slide3" class="btn btn-circle">❮</a>
+              <a href="#slide2" class="btn btn-circle">❯</a>
+            </div>
+          </div>
+
+          <!-- slide 2 -->
+          <div id="slide2" class="carousel-item relative w-full lg:h-[60vh]">
+            <img src="Images/slider-2.png" class="w-full" />
+            <div
+              class="absolute bottom-0 left-10 space-x-4 transform -translate-y-1/2"
+            >
+              <a href="#slide1" class="btn btn-circle">❮</a>
+              <a href="#slide3" class="btn btn-circle">❯</a>
+            </div>
+          </div>
+
+          <!-- slide 3 -->
+          <div id="slide3" class="carousel-item relative w-full lg:h-[60vh]">
+            <img src="Images/slider-3.png" class="w-full" />
+            <div
+              class="absolute bottom-0 lg:left-10 left-[50%] space-x-4 transform -translate-y-1/2"
+            >
+              <a href="#slide2" class="btn btn-circle">❮</a>
+              <a href="#slide1" class="btn btn-circle">❯</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <!-- professional h -->
+      <section>
+        <div class="container mx-auto border border-black px-8 lg:px-24">
+          <div>
+            <!-- section title -->
+            <div class="text-center mt-20">
+              <hr />
+              <div class="pt-8 pb-8">
+                <h1 class="text-3xl font-extrabold text-[#131318] mb-6">
+                  Professional Hockeys Club
+                </h1>
+                <p class="text-[rgba(19, 19, 24, 0.60)] w-3/4 mx-auto">
+                  Welcome to the Professional Hockey's Club, where excellence
+                  meets the ice. Explore our legacy of skill, sportsmanship, and
+                  a relentless pursuit of victory as we set the standard in the
+                  world of hockey.
+                </p>
+              </div>
+              <hr />
+            </div>
+            <!-- section element -->
+            <div class="flex lg:flex-row flex-col gap-8 pt-12">
+              <!-- card 1 -->
+              <div class="card w-96">
+                <figure class="px-10 pt-10">
+                  <div
+                    class="radial-progress text-[#FF4240]"
+                    style="--value: 87"
+                    role="progressbar"
+                  >
+                    87%
+                  </div>
+                </figure>
+                <div class="card-body items-center text-center">
+                  <h2 class="card-title text-xl text-[#131318]">
+                    Prayer Facility
+                  </h2>
+                  <p class="text-[rgba(19, 19, 24, 0.60)]">
+                    Discover peace at our on-site prayer facility , a quiet
+                    haven amidst the excitement of the game.
+                  </p>
+                </div>
+              </div>
+              <!-- card 2 -->
+              <div class="card w-96">
+                <figure class="px-10 pt-10">
+                  <div
+                    class="radial-progress text-[#49D293]"
+                    style="--value: 95"
+                    role="progressbar"
+                  >
+                    95%
+                  </div>
+                </figure>
+                <div class="card-body items-center text-center">
+                  <h2 class="card-title text-xl text-[#131318]">
+                    Experienced Coach
+                  </h2>
+                  <p class="text-[rgba(19, 19, 24, 0.60)]">
+                    Guided by experience, our seasoned coach leads with
+                    expertise, shaping champions on and off the hockey rink
+                  </p>
+                </div>
+              </div>
+              <!-- card 3 -->
+              <div class="card w-96">
+                <figure class="px-10 pt-10">
+                  <div
+                    class="radial-progress text-[#FFB546]"
+                    style="--value: 90"
+                    role="progressbar"
+                  >
+                    90%
+                  </div>
+                </figure>
+                <div class="card-body items-center text-center">
+                  <h2 class="card-title text-xl text-[#131318]">
+                    Senior Player
+                  </h2>
+                  <p class="text-[rgba(19, 19, 24, 0.60)]">
+                    Veteran presence on the ice, our senior player embodies
+                    skill, leadership, and a legacy of excellence in the game.
+                  </p>
+                </div>
+              </div>
+              <!-- card 4 -->
+              <div class="card w-96 bg-base-100">
+                <figure class="px-10 pt-10">
+                  <div
+                    class="radial-progress text-[#4C8DF1]"
+                    style="--value: 80"
+                    role="progressbar"
+                  >
+                    80%
+                  </div>
+                </figure>
+                <div class="card-body items-center text-center">
+                  <h2 class="card-title text-xl text-[#131318]">
+                    Training Ground
+                  </h2>
+                  <p class="text-[rgba(19, 19, 24, 0.60)]">
+                    Transform your game on our premier training ground where
+                    dedication meets innovation for peak performance
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer></footer>
   </body>
 </html>
